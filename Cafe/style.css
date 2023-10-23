@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* content-box ou border-box, pour margin et padding, border, border-box est plus adapté et ne dépasse pas les border de parent container */
+}
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+h2{margin: 15px 0}
+h4{margin: 10px 0}
+/* header menu */
+.fixhead{
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 10px;
+}
+.logo img{
+    height: 50px;
+}
+nav{
+    margin-right: 10px;
+}
+a{
+    color: seashell;
+}
+.fixhead ul li{
+    display: inline-block;
+    margin: auto 10px;
+}
+a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+/* banner */
+.banner{
+    height: 700px;
+    width: 1200px;
+    background-image: url(./img/img-mission-background.jpg);
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    background-color: black;
+    
+    width: 1200px;
+    
+}
+/* main */
+.imgTea{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.imgBox img{
+    height: 200px;
+    width: 300px;
+    margin: 15px;
+    
+}
+.locations{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    background-image: url(./img/img-locations-background-petit.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.locations-carre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.carre{
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    margin: 15px 40px;
+    
+}
+.espace{
+    margin: 40px auto;
+}
+.footerFirst{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.copyright{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom:30px;
+}
